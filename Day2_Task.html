@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTORS</title>
+    <style>
+      article h2 {
+        color: darkblue;
+      }
+      nav > li:first-child{
+        font-weight: bold;
+      }
+      li{
+        list-style-type: none;
+      }
+      h2+p{
+        font-style: italic;
+      }
+      li[class=highlight]{
+        color: green;
+      }
+      a[href="https"]::after{
+        content:"secure";
+      }
+      table{
+        width: 500px;
+        height: 200px
+      }
+      tr,td,th,table{
+        border: 4px solid black;
+        border-collapse: collapse;
+      }
+      tr:nth-child(even){
+        background-color: gray;
+      }
+      h1{
+        background-color: blueviolet;
+      }
+      h3{
+        display: flex;
+        border: 5px solid gray;
+        border-radius: 10px;
+        width: 5%;
+        background-color: black;
+        color: white;
+        
+        
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Descendant Selector</h1>
+    <section>
+      <article>
+        <h2>welcome to the Descendant Selector</h2>
+        <h2>Enjoy the day</h2>
+      </article>
+      <h2>It does not work because of it outside of the article</h2>
+    </section>
+    <hr>
+    <h1>Child Selector</h1>
+    <nav>
+        <li>List one</li>
+        <li>List Two</li>
+        <li>List Three</li>
+        <li>List four</li>     
+    </nav>
+    <hr>
+    <h1>Adjacent sibiling Selector</h1>
+    <p>let see the Adjacent sibiling Selector </p>
+    <h2>Heading tag 2</h2>
+    <p>It work on tha Adjacent sibiling Selector</p>
+    <p>It doesnot work based on the condition it work after the tag of h2</p>
+    <hr>
+    <h1>General Sibiling Selecto</h1>
+    <li class="highlight">List One</li>
+    <li class="highlight">List Two</li>
+    <li>List Three</li>
+    <hr>
+    <h1>Attribute Selector</h1>
+    <a href="https"></a>
+    <a href="Day2_TasK.html">Nothing will be displayed here</a>
+    <a href="https"></a>
+    <hr>
+    <h1>Pseudo-class Selector</h1>
+    <table>
+    <tr>
+        <th>Name</th>
+        <th>age</th>
+    </tr>
+    <tr>
+        <td>Thiru</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>arun</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>kavin</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>mani</td>
+        <td>32</td>
+    </tr>
+</table>
+<center>
+    <h3>The End</h3>
+</center>
+</body>
+</html>
